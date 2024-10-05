@@ -1,0 +1,109 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4faff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-title:hover {
+    color: #34495e;
+}
+
+.label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.select-input, .text-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-input:hover, .text-input:hover {
+    border-color: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+.generate-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+.quote-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4a90e2;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.quote-display:hover {
+    border-color: #2ecc71;
+}
+
+.quote-text {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 300;
+}
+
+/* Hover animations */
+.text-input::placeholder {
+    color: #bbb;
+}
+
+.text-input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.2);
+}
+
+.generate-btn:active {
+    transform: scale(0.98);
+    background-color: #2980b9;
+}
